@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pricing Component</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <!-- title -->
+        <h1 class="title">Our Plans</h1>
+        <!-- Toogle Switch -->
+        <div class="toggle">
+            <span class="toggle__period toggle__period--annually">Annually</span>
+            <input type="checkbox" id="switch" class="toggle__checkbox">
+            <label class="toggle__background" for="switch"></label>
+            <span class="toggle__periods toggle__period--monthly">Monthy</span>
+
+        </div>
+
+        <!-- Cards container-->
+        <div class="cards">
+            <!-- Basic -->
+            <div class="card card--basic">
+                <h3 class="card__plan">Basic</h3>
+                <h2 class="card__price">$3.99</h2>
+                <p class="card__description">An economical, 10 GB plan with free matching domain and free email.</p>
+                <ul>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">1 Website</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">10 GB Web Space</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">10,00 visits Monthly</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">Unmetered Traffic </span>
+                    </li>
+                </ul>
+                <a href="https://www.google.com">
+                <button class="card__btn">Get Started</button>
+                </a>
+            </div>
+            <!-- Multisite -->
+            <div class="card card--multisite">
+                <span class="card__badge">Popular</span>
+                <h3 class="card__plan">Multisite</h3>
+                <h2 class="card__price">$6.99</h2>
+                <p class="card__description">Unlimited sites with 20 GB Storage.Free matching domain and free email. </p>
+                <ul>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">Unlimited Websites</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">20 GB Web Space</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">100,000 visits Monthly</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">Unmetered Traffic </span>
+                    </li>
+                </ul>
+                <a href="https://www.google.com">
+                    <button class="card__btn">Get Started</button>
+                </a>
+            </div>
+            <!-- Business -->
+            <div class="card card--business">
+                <h3 class="card__plan">Business</h3>
+                <h2 class="card__price">$9.99</h2>
+                <p class="card__description">Increased processing power with unlimited sites,storage and databases.</p>
+                <ul>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">Unlimited Websites</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">Unlimited GB Web Space</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">400,000 visits Monthly</span>
+                    </li>
+                    <li class="card__feature">
+                        <i data-feather="check" class="feature__icon"></i>
+                        <span class="feature__text">Unmetered Traffic </span>
+                    </li>
+                </ul>
+                <a href="https://www.google.com">
+                <button class="card__btn">Get Started</button>
+                </a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+        <script>
+            feather.replace();
+        </script>
+        <script src="script.js"></script>
+    </body>
+</html>
